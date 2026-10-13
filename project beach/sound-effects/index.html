@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   
+    <a-scene>
+          <a-box position="0 0 0" rotation="90  0 0" width="20" height="20" color="#FCFC9F"></a-box>
+        <a-assets>
+            <a-asset-item id="Pirate-Barrel"
+            src="modellen/kenney_pirate-kit/Models/GLB format/barrel.glb"></a-asset-item>
+        </a-assets>
+        
+       <a-entity
+            gltf-model="#Pirate-Barrel"
+                position="0 1 -4"
+                scale="2 2 2"
+                shadow="cast: true; receive: true;"
+    
+            animation__rotation="
+                property: rotation;
+                to: 0 360 0;
+                dur: 8000;
+                easing: linear;
+                loop: true;"
+    
+            animation__bounce="
+                property: position;
+                rom: 0 0.5 -4;
+                to: 0 2 -4;
+                dur: 5000;
+                easing: easeInOutSine;
+                loop: true;
+                dir: alternate;">
+       </a-entity>
+
+        <a-sky color="#6BD0FF"></a-sky>
+    </a-scene>
+    
+</body>
+</html>

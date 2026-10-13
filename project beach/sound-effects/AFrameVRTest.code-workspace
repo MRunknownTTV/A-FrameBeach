@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../Users/103422/AFrameVRTest"
+		},
+		{
+			"path": "../../modellen"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project beach",
+		"liveServer.settings.port": 5501
+	}
+}
